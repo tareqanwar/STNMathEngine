@@ -122,8 +122,6 @@ public:
 
 	float Dot(const Vector3D& v) const;
 
-	float operator *(const Vector3D& v) const;
-
 	/**
 	 * Computes the magnitude of this vector.
 	 *
