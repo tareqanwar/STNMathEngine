@@ -116,11 +116,20 @@ public:
 	/**
 	 * Calculates the dot product of two vector
 	 *
-	 * @param v1 & v2 Two vectors
+	 * @param v The other vectors
 	 * @return a float, product of v1 & v2
 	 */
 
 	float Dot(const Vector3D& v) const;
+
+	/**
+	 * Calculates the cross product of two vector
+	 *
+	 * @param v The other vectors
+	 * @return a new vector after cross product
+	 */
+
+	Vector3D Cross(const Vector3D& v) const;
 
 	/**
 	 * Computes the magnitude of this vector.

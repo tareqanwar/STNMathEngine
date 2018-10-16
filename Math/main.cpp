@@ -17,13 +17,15 @@ int main(int argc, const char argv[]) {
 
 	//Check magnitude
 	std::cout << vector1.GetMagnitudeSq() << std::endl;
-	std::cout << vector1.GetMagnitude() << std::endl;;
+	std::cout << vector1.GetMagnitude() << std::endl;
 
-	float dot1 = vector1.Dot(vector2);
+	float dot = vector1.Dot(vector2);
+	//-4.00
 
-	float dot2 = vector1 * vector2;
+	std::cout << "dot = " << dot << std::endl;
 
-	std::cout << "dot1 = " << dot1 << " & dot2 = " << dot2 << std::endl;
+	Vector3D cross = vector1.Cross(vector2);
+	//{-4.00000000, -10.0000000, -8.00000000 }
 
 	//Addition: vector3 = vector1 + vector2
 	Vector3D vector3 = vector1 + vector2;

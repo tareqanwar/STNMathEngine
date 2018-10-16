@@ -74,7 +74,7 @@ Vector3D Vector3D::operator/(float rhs) const
 	return Vector3D(x * rhs, y * rhs, z * rhs);
 }
 
-Vector3D & Vector3D::operator/=(float rhs)
+Vector3D& Vector3D::operator/=(float rhs)
 {
 	return *this = *this / rhs;
 }
@@ -82,6 +82,11 @@ Vector3D & Vector3D::operator/=(float rhs)
 float Vector3D::Dot(const Vector3D& v) const
 {
 	return (x * v.x + y * v.y + z * v.z);
+}
+
+Vector3D Vector3D::Cross(const Vector3D& v) const
+{
+	return Vector3D(y * v.z - z * v.y, z * v.x - x * v.z, x * v.y - y * v.x);
 }
 
 float Vector3D::GetMagnitude() const
