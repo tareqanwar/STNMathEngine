@@ -114,15 +114,6 @@ public:
 	Vector3D& operator /=(float rhs);
 
 	/**
-	 * Computes the magnitude of this vector.
-	 *
-	 * @return The magnitude of the vector.
-	 *
-	 * @see GetMagnitudeSq
-	 */
-	float GetMagnitude() const;
-
-	/**
 	 * Calculates the dot product of two vector
 	 *
 	 * @param v1 & v2 Two vectors
@@ -132,6 +123,15 @@ public:
 	float Dot(const Vector3D& v) const;
 
 	float operator *(const Vector3D& v) const;
+
+	/**
+	 * Computes the magnitude of this vector.
+	 *
+	 * @return The magnitude of the vector.
+	 *
+	 * @see GetMagnitudeSq
+	 */
+	float GetMagnitude() const;
 
 	/**
 	 * Returns the squared magnitude of this vector.
