@@ -96,7 +96,7 @@ float Vector3D::GetMagnitude() const
 
 float Vector3D::GetMagnitudeSq() const
 {
-	return (x * x , y * y, z * z);
+	return (x * x + y * y + z * z);
 }
 
 Vector3D & Vector3D::Normalize()

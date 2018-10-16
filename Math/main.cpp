@@ -15,6 +15,10 @@ int main(int argc, const char argv[]) {
 	Vector3D vector1(1.0f, 2.0f, -3.0f);
 	Vector3D vector2(3.0f, -2.0f, 1.0f);
 
+	//Check magnitude
+	std::cout << vector1.GetMagnitudeSq() << std::endl;
+	std::cout << vector1.GetMagnitude() << std::endl;;
+
 	float dot1 = vector1.Dot(vector2);
 
 	float dot2 = vector1 * vector2;
@@ -46,10 +50,6 @@ int main(int argc, const char argv[]) {
 
 	//Subtraction: vector1 /= speed
 	vector1 /= speed;
-
-	//Check magnitude
-	vector3.GetMagnitudeSq();
-	vector3.GetMagnitude();
 
 	//Check Normalization
 	vector3.Normalize();
