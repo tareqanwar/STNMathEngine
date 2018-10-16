@@ -123,6 +123,17 @@ public:
 	float GetMagnitude() const;
 
 	/**
+	 * Calculates the dot product of two vector
+	 *
+	 * @param v1 & v2 Two vectors
+	 * @return a float, product of v1 & v2
+	 */
+
+	float Dot(const Vector3D& v) const;
+
+	float operator *(const Vector3D& v) const;
+
+	/**
 	 * Returns the squared magnitude of this vector.
 	 *
 	 * When it is not necessary to get the exact magnitude of a

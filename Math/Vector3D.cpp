@@ -84,6 +84,16 @@ float Vector3D::GetMagnitude() const
 	return sqrt(GetMagnitudeSq());
 }
 
+float Vector3D::Dot(const Vector3D& v) const
+{
+	return (x * v.x + y * v.y + z * v.z);
+}
+
+float Vector3D::operator*(const Vector3D& v) const
+{
+	return Dot(v);
+}
+
 float Vector3D::GetMagnitudeSq() const
 {
 	return (x * x , y * y, z * z);

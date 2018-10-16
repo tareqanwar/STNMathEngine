@@ -15,6 +15,12 @@ int main(int argc, const char argv[]) {
 	Vector3D vector1(1.0f, 2.0f, -3.0f);
 	Vector3D vector2(3.0f, -2.0f, 1.0f);
 
+	float dot1 = vector1.Dot(vector2);
+
+	float dot2 = vector1 * vector2;
+
+	std::cout << "dot1 = " << dot1 << " & dot2 = " << dot2 << std::endl;
+
 	//Addition: vector3 = vector1 + vector2
 	Vector3D vector3 = vector1 + vector2;
 
@@ -71,6 +77,8 @@ int main(int argc, const char argv[]) {
 	//mtx1(1,2);
 
 	//vector2 = mtx2[1];
+
+	std::cin.get();
 
 	return 0;
 }
